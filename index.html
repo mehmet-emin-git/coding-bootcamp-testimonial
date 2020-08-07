@@ -16,7 +16,7 @@
   <body>
     <div class="container">
       <div class="slider-container flex">
-        <div class="first-slide flex">
+        <div class="slider flex" id="first-slide">
           <div class="content">
             <p>
               “ I’ve been interested in coding for a while but never taken the
@@ -25,7 +25,7 @@
             </p>
             <div class="info flex">
               <h4 class="name">Tanya Sinclair</h4>
-              <div class="position">UX Engineer</div>
+              <span class="position">UX Engineer</span>
             </div>
           </div>
           <div>
@@ -36,7 +36,7 @@
             />
           </div>
         </div>
-        <div class="second-slide">
+        <div class="slider flex" id="second-slide">
           <div class="content">
             <p>
               “ If you want to lay the best foundation possible I’d recommend
@@ -46,7 +46,7 @@
             </p>
             <div class="info flex">
               <h4 class="name">John Tarkpor</h4>
-              <div class="position">Junior Front-end Developer</div>
+              <span class="position">Junior Front-end Developer</span>
             </div>
           </div>
           <div>
@@ -56,11 +56,15 @@
               alt="John Tarkpor image"
             />
           </div>
-          <div class="navigation">
-            <img src="./images/icon-prev.svg" alt="previous icon" />
-            <img src="./images/icon-next.svg" alt="next icon" />
-          </div>
         </div>
+      </div>
+      <div class="navigation flex">
+        <span id="prev"
+          ><img src="./images/icon-prev.svg" alt="previous icon"
+        /></span>
+        <span id="next"
+          ><img src="./images/icon-next.svg" alt="next icon"
+        /></span>
       </div>
     </div>
 
