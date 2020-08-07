@@ -13,17 +13,54 @@ body {
   font-family: "Inter", sans-serif;
   margin: 0;
   font-size: 32px;
+  color: $dark-blue;
 }
 
 img {
   max-width: 100%;
 }
 
+p {
+  letter-spacing: 1px;
+  word-spacing: 0.5px;
+  line-height: 1.4em;
+  font-weight: 300;
+}
+
 .container {
+  background: url("./images/pattern-bg.svg") no-repeat right;
   border: 1px solid palevioletred;
   max-width: 100vw;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url("./images/pattern-quotes.svg") no-repeat top left / 100%
+      100%;
+    position: absolute;
+    top: 8rem;
+    left: 17rem;
+    width: 8rem;
+    height: 7rem;
+  }
+
+  &::after {
+    content: "";
+    background: url("./images/pattern-curve.svg") no-repeat bottom left / 100%
+      100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40rem;
+    height: 9rem;
+  }
 }
+
 .flex {
   display: flex;
   justify-content: center;
@@ -33,6 +70,19 @@ img {
 // end of glabal styles
 
 .first-slide {
+  & > div {
+    flex: 1;
+  }
+
+  .content {
+    p {
+      transform: translateX(8rem);
+    }
+  }
+
+  .image {
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .second-slide {
