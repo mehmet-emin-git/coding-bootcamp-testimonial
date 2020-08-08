@@ -20,6 +20,7 @@ body::after {
   left: 0;
   width: 40rem;
   height: 9rem;
+  z-index: -1;
 }
 
 .flex {
